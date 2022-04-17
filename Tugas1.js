@@ -23,11 +23,11 @@ function result(total,number) {
 console.log(numbers.reduce(result));
 console.log("\n");
 
-// Map
-numbers.map((item) => {
-    console.log(item + 2);
-    
+// filter
+const get = numbers.filter(function (number) {
+  return number > 50;
 });
+console.log(get);
 console.log("\n");
 
 
@@ -37,16 +37,16 @@ console.log(Math.min(6, 3, 9, 10, 4, 12, 11, 7));
 console.log("\n");
 
 // Date
-const date = new Date();
+let date = Date();
 console.log(date);
-const date2 = new Date(2022, 10, 10, 20);
-console.log(date2);
 console.log("\n");
 
 // shift
 let name = ["fred","verane","sanco","shaw"]
 console.log(`hapus nama : ${name.shift()}`);
 console.log('====================================');
+
+// unshif
 name.unshift("telles", "do");
 console.log(`tambah nama: ${name}`);
 console.log("\n");
@@ -69,3 +69,8 @@ console.log("\n");
 // random
 let num = Math.random()
 console.log(num);
+
+//replace
+let text = "Hello World";
+let hasil = text.replace("World", "Dunia");
+console.log(hasil);
