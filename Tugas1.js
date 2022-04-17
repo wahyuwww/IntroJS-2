@@ -25,7 +25,8 @@ console.log("\n");
 
 // Map
 numbers.map((item) => {
-   console.log(item + 2);
+    console.log(item + 2);
+    
 });
 console.log("\n");
 
